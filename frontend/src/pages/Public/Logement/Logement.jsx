@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import '../../../styles/accommodation.css';
@@ -19,12 +19,8 @@ const AccommodationSheet = () => {
     let { id } = useParams();
     let navigate = useNavigate();
 
-    useEffect(() => {
-        // eslint-disable-next-line
-        getInfo()
-    }, [id])
-
-    const getInfo = async () => {
+    // Utilisation de useCallback pour éviter de recharger la page à chaque fois que l'on change de logement
+    const getInfo = useCallback(async () => {
         await AccommodationsService.GetOneAccomadations(id)
             .then((data) => {
                 if (data) {
@@ -37,8 +33,11 @@ const AccommodationSheet = () => {
             .catch((error) => {
                 console.log(error)
             })
-    }
+    }, [id, navigate]); // On ajoute les dépendances à useCallback 
 
+    useEffect(() => {
+        getInfo()
+    }, [getInfo]) // On ajoute les dépendances à useEffect
 
 
     if (isLoading) return (<h3>Chargement...</h3>)
