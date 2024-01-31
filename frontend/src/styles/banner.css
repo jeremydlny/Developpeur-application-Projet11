@@ -1,0 +1,42 @@
+.text-banner {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.text-banner h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--color-quaternary);
+}
+
+.landscape-container {
+    position: relative;
+    overflow: hidden;
+    height: 223px;
+    margin: 50px 85px 0px 85px;
+}
+
+.landscape-container::before {
+    content: "";
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.landscape-container img {
+    width: 100%;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 25px;
+}

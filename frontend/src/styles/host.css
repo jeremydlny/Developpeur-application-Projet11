@@ -1,0 +1,22 @@
+.host-accommodation {
+    color: var(--color-primary);
+    font-size: 18px;
+    margin-top: 10px;
+    position: relative;
+    padding-left: 40px;
+    flex: 1;
+    display: inline-block;
+    margin: 0;
+}
+
+.host-accommodation::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+}

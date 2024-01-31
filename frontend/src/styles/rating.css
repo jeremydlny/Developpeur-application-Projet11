@@ -1,0 +1,11 @@
+.rating-accommodation {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+    width: 100%;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+}
