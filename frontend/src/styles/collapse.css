@@ -26,6 +26,7 @@
     width: 32px;
     height: 32px;
     filter: invert(100%);
+    fill: var(--color-quaternary);
     transition: transform 0.5s ease;
 }
 
