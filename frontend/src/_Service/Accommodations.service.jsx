@@ -6,6 +6,7 @@ const GetAllAccomadations = () => {
 }
 
 const GetOneAccomadations = async (id) => {
+    console.log(id);
     const accomadations = await AccommodationsListe.find(acco => acco.id === id)
     return accomadations
 }

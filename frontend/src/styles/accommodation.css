@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-.banner-accommodation img {
+.carousel-image {
     width: 94%;
     height: 897px;
     object-fit: cover;

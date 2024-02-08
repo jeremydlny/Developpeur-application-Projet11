@@ -12,6 +12,7 @@ import Collapse from '../../../Components/Collapse';
 import AccommodationsService from '../../../_Service/Accommodations.service';
 
 const AccommodationSheet = () => {
+    console.log("AccommodationSheet rendered!");
 
     const [logement, setlogement] = useState({});
     const [isLoading, setIsLoading] = useState(true);
@@ -19,27 +20,27 @@ const AccommodationSheet = () => {
     let { id } = useParams();
     let navigate = useNavigate();
 
-    useEffect(() => {
-        // eslint-disable-next-line
-        getInfo()
-    }, [id])
-
-    const getInfo = async () => {
-        await AccommodationsService.GetOneAccomadations(id)
-            .then((data) => {
-                if (data) {
-                    setlogement(data);
-                    setIsLoading(false);
-                } else {
-                    navigate("/404")
-                }
+    useEffect(() => { // On récupère les données du logement en fonction de l'id
+        // console.log("Compoment rendered!");
+        const getInfo = async () => {
+            await AccommodationsService.GetOneAccomadations(id)
+                .then((data) => {
+                    if (data) { // Si les données existent on les stocke dans le state logement et on passe isLoading à false
+                        setlogement(data);
+                        setIsLoading(false);
+                    } else {
+                        navigate("/404") // Sinon on redirige vers la page 404
+                    }
             })
-            .catch((error) => {
+            .catch((error) => { // En cas d'erreur on affiche l'erreur dans la console
                 console.log(error)
             })
-    }
-
-
+        } 
+        
+        // Appel de la fonction getInfo
+        getInfo()
+    }, [id, navigate]) // Ajout de id et navigate dans les dépendances
+    
 
     if (isLoading) return (<h3>Chargement...</h3>)
     return (
