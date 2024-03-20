@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-function Tag({ text }) {
+function Tag({ tag }) {
     return (
         <div className="tag-accommodation">
-            {text}
+            {tag}
         </div>
     );
 }

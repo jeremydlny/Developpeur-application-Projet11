@@ -41,7 +41,8 @@ const AccommodationSheet = () => {
         getInfo()
     }, [id, navigate]) // Ajout de id et navigate dans les dépendances
     
-
+    console.log(logement.tags);
+    
     if (isLoading) return (<h3>Chargement...</h3>)
     return (
         <div className="accommodation-sheet">
@@ -53,7 +54,7 @@ const AccommodationSheet = () => {
                     <h1>{logement.title}</h1>
                     <p>{logement.location}</p>
                     <div className="tag-container">
-                        {logement.tags.map((tag, index) => <Tag key={index} tag={tag} />)} // faire un console log de tag pour voir ce qu'il contient
+                        {logement.tags.map((tag, index) => <Tag key={index} tag={tag} />)}
                     </div>
                 </div>
                 <div className='host-rating'>
