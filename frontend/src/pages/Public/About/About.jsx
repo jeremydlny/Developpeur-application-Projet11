@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Banner from '../../../Components/Banner';
-import Collapse from '../../../Components/Collapse';
+import Banner from '@/Components/Banner';
+import Collapse from '@/Components/Collapse';
 
-import bannerimg from '../../../assets/Banner.png';
+import bannerimg from '@/assets/Banner.png';
 
-import aboutinfo from "../../../Data/aboutinfo.json";
+import aboutinfo from "@/Data/aboutinfo.json";
 
 function About() {
 

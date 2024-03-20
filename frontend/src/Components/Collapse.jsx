@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
-import '../styles/index.css';
-import '../styles/collapse.css';
-// import Arrow from '../assets/Arrow.svg';
-import { ReactComponent as Arrow } from '../assets/Arrow.svg';
+import '@/styles/index.css';
+import '@/styles/collapse.css';
+import { ReactComponent as Arrow } from '@/assets/Arrow.svg';
 
 const Collapse = ({ title, text }) => {
     const [isOpen, setIsOpen] = useState(true);
 
     const toggle = () => {
         setIsOpen(!isOpen);
+        console.log(isOpen);
     };
-
     return (
         <div className="collapse">
             <div className="collapse-header" onClick={toggle}>

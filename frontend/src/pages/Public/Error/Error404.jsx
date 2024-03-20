@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import '../../../styles/error.css';
+import '@/styles/error.css';
 
 const Error = () => {
     return (

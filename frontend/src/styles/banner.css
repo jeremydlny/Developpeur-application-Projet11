@@ -9,10 +9,10 @@
 }
 
 .text-banner h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 48px;
-    font-weight: 300;
     color: var(--color-quaternary);
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
 }
 
 .landscape-container {

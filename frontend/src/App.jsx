@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import PublicRouter from "./pages/Public/PublicRouter";
+import PublicRouter from "@/pages/Public/PublicRouter";
 function App() {
   return (
     <BrowserRouter>

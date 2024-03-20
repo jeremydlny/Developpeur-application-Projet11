@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-import '../../../styles/accommodation.css';
+import '@/styles/accommodation.css';
 
-import Host from '../../../Components/Host';
-import Tag from '../../../Components/Tag';
-import Rating from '../../../Components/Rating';
-import Carousel from '../../../Components/Carousel';
-import Collapse from '../../../Components/Collapse';
+import Host from '@/Components/Host';
+import Tag from '@/Components/Tag';
+import Rating from '@/Components/Rating';
+import Carousel from '@/Components/Carousel';
+import Collapse from '@/Components/Collapse';
 
 import AccommodationsService from '../../../_Service/Accommodations.service';
 
@@ -21,7 +21,7 @@ const AccommodationSheet = () => {
     let navigate = useNavigate();
 
     useEffect(() => { // On récupère les données du logement en fonction de l'id
-        // console.log("Compoment rendered!");
+        console.log("Compoment rendered!");
         const getInfo = async () => {
             await AccommodationsService.GetOneAccomadations(id)
                 .then((data) => {
@@ -53,7 +53,7 @@ const AccommodationSheet = () => {
                     <h1>{logement.title}</h1>
                     <p>{logement.location}</p>
                     <div className="tag-container">
-                        {logement.tags.map((tag, index) => <Tag key={index} tag={tag} />)}
+                        {logement.tags.map((tag, index) => <Tag key={index} tag={tag} />)} // faire un console log de tag pour voir ce qu'il contient
                     </div>
                 </div>
                 <div className='host-rating'>

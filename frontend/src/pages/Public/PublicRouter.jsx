@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import { Home, About, Logement, Error404 } from "../Public/Index";
 
-import Layout from "../../Layout/Layout";
+import Layout from "@/Layout/Layout";
 
 const PublicRouter = () => {
     return (

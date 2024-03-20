@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Banner from '../../../Components/Banner';
-import Card from '../../../Components/Card';
+import Banner from '@/Components/Banner';
+import Card from '@/Components/Card';
 
-import AccomadationsService from "../../../_Service/Accommodations.service";
+import AccomadationsService from "@/_Service/Accommodations.service";
 
-import banner from '../../../assets/Banner.png';
+import banner from '@/assets/Banner.png';
 
 function Home() {
     return (

@@ -5,7 +5,7 @@
 .Header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
     padding: 45px 70px 0px 85px;
 }
 
@@ -41,5 +41,5 @@ nav a {
     letter-spacing: 0em;
     text-align: right;
     text-decoration: none;
-    color: var(--color-tertiary);
+    color: var(--color-primary);
 }

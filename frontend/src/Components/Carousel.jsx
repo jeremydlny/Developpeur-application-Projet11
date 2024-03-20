@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../styles/collapse.css';
-import ArrowIcon from '../assets/Arrow.svg';
+import '@/styles/collapse.css';
+import ArrowIcon from '@/assets/Arrow.svg';
 
 
 // On déclare un composant qui prend en paramètre un tableau de photos

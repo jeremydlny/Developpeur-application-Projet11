@@ -1,6 +1,6 @@
-import Star from '../assets/Star.svg';
-import StarFilled from '../assets/Star-filled.svg';
-import '../styles/accommodation.css';
+import Star from '@/assets/Star.svg';
+import StarFilled from '@/assets/Star-filled.svg';
+import '@/styles/accommodation.css';
 
 function Rating({ rating }) {
     const numberOfStars = 5;

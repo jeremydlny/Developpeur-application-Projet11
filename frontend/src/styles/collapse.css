@@ -40,7 +40,7 @@
     transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
-.collapse-tex.show {
+.collapse-text.open {
     max-height: 300px;
     opacity: 1;
     transform: translateY(0);
