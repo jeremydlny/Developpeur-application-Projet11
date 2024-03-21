@@ -9,7 +9,7 @@ import Rating from '@/Components/Rating';
 import Carousel from '@/Components/Carousel';
 import Collapse from '@/Components/Collapse';
 
-import AccommodationsService from '../../../_Service/Accommodations.service';
+import AccommodationsService from '@/_Service/Accommodations.service';
 
 const AccommodationSheet = () => {
     console.log("AccommodationSheet rendered!");
@@ -41,8 +41,9 @@ const AccommodationSheet = () => {
         getInfo()
     }, [id, navigate]) // Ajout de id et navigate dans les dépendances
     
-    console.log(logement.tags);
-    
+    console.log(logement.description);
+    console.log(logement.equipments);
+
     if (isLoading) return (<h3>Chargement...</h3>)
     return (
         <div className="accommodation-sheet">

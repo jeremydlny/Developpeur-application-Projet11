@@ -17,7 +17,7 @@ const Carousel = ({ images }) => {
         setIndex((prevIndex) => prevIndex === 0 ? images.length - 1 : prevIndex - 1)
     };
 
-    console.log(images)
+    // console.log(images)
     // On retourne un composant qui affiche la photo courante, les boutons pour passer à la photo suivante ou précédente et le compteur de photos
     return (
         <div className='carousel'>

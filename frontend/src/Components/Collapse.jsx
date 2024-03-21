@@ -3,8 +3,8 @@ import '@/styles/index.css';
 import '@/styles/collapse.css';
 import { ReactComponent as Arrow } from '@/assets/Arrow.svg';
 
-const Collapse = ({ title, text }) => {
-    const [isOpen, setIsOpen] = useState(true);
+const Collapse = ({ title, text, content }) => {
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
         setIsOpen(!isOpen);
@@ -22,7 +22,7 @@ const Collapse = ({ title, text }) => {
             </div>
 
             <div className={`collapse-text ${isOpen ? 'open' : 'closed'}`}>
-                <div>{text}</div>
+                <div>{text || content}</div>
             </div>
         </div>
     );
