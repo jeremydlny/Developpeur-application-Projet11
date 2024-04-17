@@ -40,7 +40,7 @@ frontend/
             banner.css
     README.md
 
-    Installation
+Installation
 To install the project, you need to have Node.js and npm installed on your machine. Then, you can clone the repository and install the dependencies:
 
 git clone <repository_url>
