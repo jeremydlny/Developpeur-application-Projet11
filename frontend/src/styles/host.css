@@ -1,0 +1,54 @@
+
+.host-rating{
+    margin-top: 15px;
+}
+
+.host-accommodation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--color-primary);
+    font-size: 18px;
+    position: relative;
+    padding-left: 40px;
+    flex: 1;
+    margin-left: auto;
+}
+
+.host-accommodation p {
+    display: flex; 
+    justify-content: flex-end;
+    color: var(--color-primary);
+    font-size: 1rem;
+    text-align: right;
+    width: min-content;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+.host-accommodation img {
+    order: 2;
+    height: 64px;
+    border-radius: 100%;
+    /* margin: 29px 0px 25px 12px; */
+}
+
+
+@media (max-width: 750px) {
+
+    .host-rating{
+        display: flex;
+    }
+
+    .host-accommodation {
+        width: 50%;
+        top: 15px;
+        font-size: 14px;
+        justify-content: end;
+    }
+
+    .host-accommodation img {
+        height: 55%;
+    }
+}

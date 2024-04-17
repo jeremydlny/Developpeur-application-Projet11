@@ -1,0 +1,210 @@
+.accommodation-sheet {
+    font-family: var(--font-primary);
+    width: 100%;
+    padding: 50px 80px 50px 80px;
+}
+
+.accommodation-sheet-collapse {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.accommodation-sheet-collapse > * {
+    flex: 1;
+}
+
+.accommodation-sheet-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.accommodation-sheet-description h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--color-primary);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+.accommodation-sheet-description p {
+    margin-top: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-tertiary);
+}
+
+.banner-accommodation {
+    width: 100%;
+    height: 81vh;
+    margin: 50px 85px 0px 85px;
+    overflow: hidden;
+}
+
+.carousel {
+    height: 815px;
+    gap: 50px;
+    position: relative;
+}
+
+.carousel-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.carousel-button.carousel-button-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button.carousel-button-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-quaternary);
+    font-size: 24px;
+}
+
+.name-accommodation {
+    font-size: 24px;
+    margin: 20px 0px 0px 85px;
+    color: var(--color-primary);
+}
+
+.location-accommodation {
+    color: var(--color-primary);
+    font-size: 18px;
+    margin: 20px 0px 0px 85px;
+    margin-top: 10px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.tag-container{
+    margin: 0;
+}
+
+.tag-container {
+    flex: 1;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.tag-accommodation {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 9px 20px;
+    margin-right: 10px;
+    background-color: var(--color-primary);
+    color: var(--color-quaternary);
+    border-radius: 11px;
+    font-size: 16px;
+}
+
+
+
+.description-accommodation,
+.equipement-accommodation {
+    position: relative;
+    margin-top: 30px;
+    padding: 20px;
+    width: 50%;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    margin: 20px 0px 0px 85px;
+}
+
+@media(max-width: 750px) {
+    .accommodation-sheet-collapse {
+        display: block;
+        justify-content: space-between;
+        gap: 20px;
+        overflow: hidden;
+        margin-top: 8px;
+    }
+
+    .accommodation-sheet-description {
+        display: block;
+        justify-content: space-between;
+        align-items: start;
+        margin-top: 20px;
+    }
+
+    .accommodation-sheet-description h1 {
+        font-size: 40px;
+    }
+
+    .accommodation-sheet {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .banner-accommodation {
+        margin: 20px 20px 0px 20px;
+    }
+
+    .name-accommodation {
+        margin: 20px 0px 0px 20px;
+    }
+
+    .location-accommodation {
+        margin: 20px 0px 0px 20px;
+    }
+
+    .description-accommodation,
+    .equipement-accommodation {
+        width: 100%;
+        margin: 20px 0px 0px 20px;
+    }
+
+    .description-accommodation,
+    .equipement-accommodation {
+        padding: 10px;
+    }
+
+    .collapse {
+        gap: 10px;
+    }
+
+    .collapse-header {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+}
+

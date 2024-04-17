@@ -1,0 +1,41 @@
+.rating-accommodation {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+ 
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+}
+
+.rating-accommodation {
+    text-align: end;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.rating-accommodation img {
+    margin-right: 10px;
+}
+
+
+
+@media (max-width: 750px) {
+    .rating-accommodation {
+        order: -1;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .star {
+        width: 30px;
+        height: 30px;
+    }
+    .rating-accommodation img {
+        margin-right: 4px;
+    }
+    
+}
