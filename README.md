@@ -52,7 +52,7 @@ The project uses CSS for styling. The styles for each component are located in t
 Clone the project
 
 ```bash
-  git clone <(https://github.com/jeremydlny/Developpeur-application-Projet11)>
+  git clone (https://github.com/jeremydlny/Developpeur-application-Projet11)
 ```
 
 Go to the project directory
